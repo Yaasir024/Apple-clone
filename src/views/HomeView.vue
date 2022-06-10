@@ -1,7 +1,7 @@
 <template>
   <main>
     <section class="section-hero">
-      <div class="section-content">
+      <div class="section-content section-padding">
         <picture class="overview-hero">
           <img src="../assets/hero1pic.png" alt="" />
         </picture>
