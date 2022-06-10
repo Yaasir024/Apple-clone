@@ -589,6 +589,12 @@ picture img {
     margin-bottom: 6px;
     margin-top: 3px;
   }
+  .headline {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+}
 }
 @media only screen and (max-width: 1068px) {
   /* .section-ipados-16 .subhead {

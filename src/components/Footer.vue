@@ -9,6 +9,7 @@
       </section>
       <nav class="footer-nav">
         <div class="nav-section">
+          <h3 class="nav-section-title">Shop and Learn</h3>
           <ul class="section-list">
             <li class="section-item">
               <a href="#">Shop</a>
@@ -41,6 +42,178 @@
               <a href="#">Gift Cards</a>
             </li>
           </ul>
+        </div>
+        <div class="nav-section">
+          <h3 class="nav-section-title">Services</h3>
+          <ul class="section-list">
+            <li class="section-item">
+              <a href="#">Apple Music</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Apple TV+</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Apple Fitness+</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Apple News+</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Apple Arcade</a>
+            </li>
+            <li class="section-item">
+              <a href="#">iCloud</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Apple One</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Apple Pay</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Apple Books</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Apple Podcasts</a>
+            </li>
+            <li class="section-item">
+              <a href="#">App Store</a>
+            </li>
+          </ul>
+
+          <div class="nav-section nav-sub-section">
+            <h3 class="nav-section-title">Account</h3>
+            <ul class="section-list">
+              <li class="section-item">
+                <a href="#">Manage Your Apple ID</a>
+              </li>
+              <li class="section-item">
+                <a href="#">Apple Store Account</a>
+              </li>
+              <li class="section-item">
+                <a href="#">iCloud.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-section">
+          <h3 class="nav-section-title">Apple Store</h3>
+          <ul class="section-list">
+            <li class="section-item">
+              <a href="#">Find a Store</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Genius Bar</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Today at Apple</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Apple Summer Camp</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Apple Store App</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Refurbished and Clearance</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Apple Trade</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Order Status</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Shopping Help</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-section">
+          <h3 class="nav-section-title">For Business</h3>
+          <ul class="section-list">
+            <li class="section-item">
+              <a href="#">Apple and Business</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Shop for Business</a>
+            </li>
+          </ul>
+
+          <div class="nav-section nav-sub-section">
+            <h3 class="nav-section-title">For Education</h3>
+            <ul class="section-list">
+              <li class="section-item">
+                <a href="#">Apple and Education</a>
+              </li>
+              <li class="section-item">
+                <a href="#">Shop for University</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-section nav-sub-section">
+            <h3 class="nav-section-title">For Healthcare</h3>
+            <ul class="section-list">
+              <li class="section-item">
+                <a href="#">Apple in Healthcare</a>
+              </li>
+              <li class="section-item">
+                <a href="#">Health on Apple Watch</a>
+              </li>
+              <li class="section-item">
+                <a href="#">Health Records on iPhone</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-section">
+          <h3 class="nav-section-title">Apple Values</h3>
+          <ul class="section-list">
+            <li class="section-item">
+              <a href="#">Accessibility</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Environment</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Privacy</a>
+            </li>
+            <li class="section-item">
+              <a href="#">Supplier Responsibility</a>
+            </li>
+          </ul>
+
+          <div class="nav-section nav-sub-section">
+            <h3 class="nav-section-title">About Apple</h3>
+            <ul class="section-list">
+              <li class="section-item">
+                <a href="#">Newsroom</a>
+              </li>
+              <li class="section-item">
+                <a href="#">Apple Leadership</a>
+              </li>
+              <li class="section-item">
+                <a href="#">Career Oppourtunities</a>
+              </li>
+              <li class="section-item">
+                <a href="#">Warranty</a>
+              </li>
+              <li class="section-item">
+                <a href="#">Investors</a>
+              </li>
+              <li class="section-item">
+                <a href="#">Ethic & Compliance</a>
+              </li>
+              <li class="section-item">
+                <a href="#">Events</a>
+              </li>
+              <li class="section-item">
+                <a href="#">European Job Creation</a>
+              </li>
+              <li class="section-item">
+                <a href="#">Contact Apple</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <section class="footer-extra">
@@ -109,12 +282,26 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding-top: 20px;
 }
 .footer-nav {
   -ms-flex-preferred-size: 25%;
   flex-basis: 25%;
+}
+.nav-sub-section {
+  padding-top: 24px;
+}
+.nav-section-title {
+  font-size: 12px;
+  color: var(--footer-directory-title-color);
+
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-bottom: 0.8em;
 }
 .footer-nav .section-list {
   margin-right: 20px;
@@ -158,6 +345,11 @@ footer {
   white-space: nowrap;
 }
 
+@media only screen and (max-width: 833px) {
+  .footer-nav {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1044px) {
   footer {
     min-width: 320px;
