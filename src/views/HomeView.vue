@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="section-hero">
+    <section class="section-hero">
       <div class="section-content">
         <picture class="overview-hero">
           <img src="../assets/hero1pic.png" alt="" />
@@ -24,14 +24,60 @@
           >Watch the keynote</a
         >
       </div>
-    </div>
-    <div class="section-macbook-air">
-      
-    </div>
+    </section>
+    <section class="section-macbook-air">
+      <div class="section-content section-padding">
+        <h2 class="headline">MacBook&nbsp;Air</h2>
+        <picture class="overview-macbook">
+          <img src="../assets/macbookair.jpg" alt="" />
+        </picture>
+        <p class="subhead">
+          All-new strikingly thin design and next-generation M2&nbsp;chip.
+          Featuring a beautiful Liquid&nbsp;Retina&nbsp;display, 1080p
+          FaceTime&nbsp;HD camera, four-speaker sound system and up to
+          18&nbsp;hours of battery life.
+        </p>
+      </div>
+    </section>
   </main>
 </template>
 
 <style scoped>
+.section-macbook-air {
+  background: #fff;
+}
+.section-macbook-air .headline {
+  margin-bottom: 50px;
+}
+.overview-macbook {
+  display: block;
+  width: 688px;
+  height: 688px;
+}
+.section-macbook-air .subhead {
+  margin-top: 70px;
+  max-width: 565px;
+}
+
+/*  */
+.section-padding {
+  padding: 167px 0 180px;
+}
+.headline {
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+}
+.subhead {
+  font-size: 24px;
+  line-height: 1.3334133333;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  margin-bottom: 18px;
+}
+
+/* Hero-section */
 .section-hero {
   background: linear-gradient(#020d1f 16%, black 35%);
   min-height: 1160px;
@@ -75,13 +121,6 @@ picture img {
   color: #c6e2e6;
   max-width: 630px;
 }
-.subhead {
-  font-size: 24px;
-  line-height: 1.3334133333;
-  font-weight: 400;
-  letter-spacing: 0.009em;
-  margin-bottom: 18px;
-}
 .section-content .button {
   font-size: 17px;
   line-height: 1.1764805882;
@@ -120,7 +159,17 @@ picture img {
     max-width: 360px;
   }
   .section-hero {
-  min-height: 100vh;
+    min-height: 100vh;
+  }
+  .overview-macbook {
+    width: 278px;
+    height: 278px;
+  }
 }
-}
+/* @media only screen and (max-width: 1068px) {
+  .overview-macbook {
+    width: 688px;
+    height: 688px;
+  }
+} */
 </style>
