@@ -80,7 +80,9 @@
           powerful new features in Messages and Mail.
         </p>
 
-        <a href="/uk/ios/ios-16-preview/" class="dark-button">See the preview</a>
+        <a href="/uk/ios/ios-16-preview/" class="dark-button"
+          >See the preview</a
+        >
       </div>
     </section>
     <section class="section-macos-ventura">
@@ -100,7 +102,9 @@
           Continuity&nbsp;Camera, you can seamlessly make your iPhone your Mac
           webcam.
         </p>
-        <a href="/uk/ios/ios-16-preview/" class="dark-button">See the preview</a>
+        <a href="/uk/ios/ios-16-preview/" class="dark-button"
+          >See the preview</a
+        >
       </div>
     </section>
     <section class="section-ipados-16">
@@ -123,7 +127,9 @@
           drag and drop files between devices. Explore full maps and rich
           details in the new Weather app for iPad.
         </p>
-        <a href="/uk/ios/ios-16-preview/" class="dark-button">See the preview</a>
+        <a href="/uk/ios/ios-16-preview/" class="dark-button"
+          >See the preview</a
+        >
       </div>
     </section>
     <section class="section-watchos-9">
@@ -145,11 +151,65 @@
           meds in the new Medications app. Get more insights into your sleep.
           And enjoy more watch faces with more personalisation.
         </p>
-        <a href="/uk/ios/ios-16-preview/" class="dark-button">See the preview</a>
+        <a href="/uk/ios/ios-16-preview/" class="dark-button"
+          >See the preview</a
+        >
       </div>
     </section>
     <section class="section-macbook-pro-13">
-
+      <div class="section-content section-padding">
+        <h2 class="headline" aria-label="macbook pro 13 inch">
+          MacBook&nbsp;Pro&nbsp;13”
+        </h2>
+        <picture class="overview-macbookpro-13">
+          <source
+            srcset="/src/assets/macbookpro13_small.jpg 2x"
+            media="(max-width:734px)"
+          />
+          <source
+            srcset="/src/assets/macbookpro13_large.jpg 2x"
+            media="(min-width:0px)"
+          />
+          <img src="/src/assets/macbookpro13_large.jpg" />
+        </picture>
+        <p class="subhead">
+          Now more capable than ever with the new M2&nbsp;chip. Featuring a
+          brilliant Retina&nbsp;display, FaceTime&nbsp;HD camera, studio-quality
+          mics and up to 20&nbsp;hours of battery life.
+        </p>
+        <div class="supercharge-container">
+          <p class="supercharged">Supercgharged by</p>
+          <picture class="overview-supercharged">
+            <source
+              srcset="/src/assets/supercharged_small.jpg 2x"
+              media="(max-width:734px)"
+            />
+            <source
+              srcset="/src/assets/supercharged_large.jpg 2x"
+              media="(min-width:0px)"
+            />
+            <img src="/src/assets/supercharged_large.jpg" />
+          </picture>
+        </div>
+        <p class="availability">Available next month</p>
+        <div class="button-container">
+          <a
+            href="/uk/macbook-air-m2/"
+            class="light-button"
+            aria-label="Learn more about MacBook&nbsp;Air M2&nbsp;chip model"
+            data-analytics-title="learn more about macbook air m2"
+            >Learn more</a
+          >
+          <a
+            href="/uk/shop/goto/buy_mac/macbook_air_m2"
+            class="light-button"
+            style="margin-left: 15px"
+            aria-label="View pricing for MacBook Air M2 chip model"
+            data-analytics-title="view pricing for macbook air m2"
+            >View Pricing</a
+          >
+        </div>
+      </div>
     </section>
   </main>
 </template>
@@ -157,10 +217,32 @@
 <style scoped>
 /* MacBook Pro 13 */
 .section-macbook-pro-13 {
-    background-color: #000;
+  background-color: #000;
 }
-
-
+.section-macbook-pro-13 .headline {
+  color: #f5f5f7;
+  margin-bottom: 17px;
+}
+.overview-macbookpro-13 {
+  display: block;
+  width: 1068px;
+  height: 416px;
+}
+.section-macbook-pro-13 .subhead {
+  color: #f5f5f7;
+  margin-top: -81px;
+  max-width: 510px;
+}
+.section-macbook-pro-13 .availability {
+  font-weight: 600;
+  color: #87868c;
+  margin-bottom: 19px;
+}
+.section-macbook-pro-13 .supercharge-container .supercharged {
+  font-weight: 600;
+  margin-right: 10px;
+  color: #f5f5f7;
+}
 
 /*  */
 .section-padding {
@@ -196,6 +278,19 @@
   letter-spacing: 0.009em;
   z-index: 1;
 }
+
+.supercharge-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-top: 14px;
+}
+.overview-supercharged {
+  display: block;
+  width: 77px;
+  height: 77px;
+}
 .dark-button {
   color: #1d1d1f;
   background-color: initial;
@@ -215,6 +310,27 @@
 .dark-button:hover {
   background-color: #1d1d1f;
   color: #fff;
+}
+
+.light-button {
+  color: #fff;
+  background-color: initial;
+  border: 2px solid #fff;
+  border-radius: 980px;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  font-size: 17px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  min-width: 26px;
+  padding: 12px 22px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+.light-button:hover {
+  background-color: #fff;
+  color: #1d1d1f;
 }
 
 /* Hero-section */
@@ -298,13 +414,6 @@ picture img {
   margin-top: 70px;
   max-width: 565px;
 }
-.supercharge-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 32px;
-  margin-top: 14px;
-}
 .section-macbook-air .supercharge-container .supercharged {
   font-weight: 600;
   margin-right: 15px;
@@ -319,7 +428,7 @@ picture img {
   color: #87868c;
   margin-bottom: 19px;
 }
-.section-macbook-air .button-container {
+.button-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -401,7 +510,6 @@ picture img {
   max-width: 560px;
 }
 
-
 @media only screen and (max-width: 734px) {
   .overview-hero {
     width: 366px;
@@ -424,6 +532,10 @@ picture img {
   .overview-macbook {
     width: 278px;
     height: 278px;
+  }
+  .section-macbook-air .supercharge-container .supercharged {
+    margin-right: 0;
+    margin-bottom: 18px;
   }
   .section-ios-16 .section-content .overview-ios-16 {
     margin-top: 26px;
@@ -456,9 +568,27 @@ picture img {
     height: 400px;
   }
   .section-watchos-9 .subhead {
-  margin-top: -28px;
-  max-width: 328px;
-}
+    margin-top: -28px;
+    max-width: 328px;
+  }
+  .overview-macbookpro-13 {
+    display: block;
+    width: 734px;
+    height: 186px;
+  }
+  .section-macbook-pro-13 .subhead {
+    margin-top: -21px;
+    max-width: 360px;
+  }
+  .overview-supercharged {
+    width: 85px;
+    height: 85px;
+  }
+  .supercharge-container {
+    flex-direction: column;
+    margin-bottom: 6px;
+    margin-top: 3px;
+  }
 }
 @media only screen and (max-width: 1068px) {
   /* .section-ipados-16 .subhead {
