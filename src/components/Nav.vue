@@ -133,29 +133,6 @@
 </template>
 
 <style scoped>
-.mobile-nav {
-  display: none;
-  width: 100%;
-}
-.mobile-nav-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  padding-left: 0;
-}
-@media only screen and (max-width: 833px) {
-  .mobile-nav {
-    display: block;
-  }
-  .nav-content {
-    width: 100%;
-  }
-  .desktop-nav {
-    display: none;
-  }
-}
-
 nav {
   background: rgba(0, 0, 0, 0.92);
   height: 48px;
@@ -210,4 +187,27 @@ nav {
 .nav-link .nav-links-container .cart-icon svg {
   margin-top: 10px;
 }
+.mobile-nav {
+  display: none;
+  width: 100%;
+}
+.mobile-nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+@media only screen and (max-width: 833px) {
+  .mobile-nav {
+    display: block;
+  }
+  .nav-content {
+    width: 100%;
+  }
+  .desktop-nav .nav-links-container {
+    display: none;
+  }
+}
+
 </style>
