@@ -47,14 +47,14 @@
         <div class="button-container">
           <a
             href="/uk/macbook-air-m2/"
-            class="button"
+            class="dark-button"
             aria-label="Learn more about MacBook&nbsp;Air M2&nbsp;chip model"
             data-analytics-title="learn more about macbook air m2"
             >Learn more</a
           >
           <a
             href="/uk/shop/goto/buy_mac/macbook_air_m2"
-            class="button"
+            class="dark-button"
             style="margin-left: 15px"
             aria-label="View pricing for MacBook Air M2 chip model"
             data-analytics-title="view pricing for macbook air m2"
@@ -80,7 +80,7 @@
           powerful new features in Messages and Mail.
         </p>
 
-        <a href="/uk/ios/ios-16-preview/" class="button">See the preview</a>
+        <a href="/uk/ios/ios-16-preview/" class="dark-button">See the preview</a>
       </div>
     </section>
     <section class="section-macos-ventura">
@@ -91,10 +91,6 @@
             srcset="/src/assets/marcos734.jpg 2x"
             media="(max-width:734px)"
           />
-          <source
-            srcset="/src/assets/marcos1068.jpg 2x"
-            media="(max-width:1068px)"
-          />
           <source srcset="/src/assets/marcos0.jpg 2x" media="(min-width:0px)" />
           <img src="/src/assets/marcos.jpg" />
         </picture>
@@ -104,17 +100,74 @@
           Continuity&nbsp;Camera, you can seamlessly make your iPhone your Mac
           webcam.
         </p>
-        <a href="/uk/ios/ios-16-preview/" class="button">See the preview</a>
+        <a href="/uk/ios/ios-16-preview/" class="dark-button">See the preview</a>
       </div>
+    </section>
+    <section class="section-ipados-16">
+      <div class="section-content section-padding-half">
+        <h2 class="headline">iPad&nbsp;OS&nbsp;16</h2>
+        <picture class="overview-ipados">
+          <source
+            srcset="/src/assets/ipados_small.jpg 2x"
+            media="(max-width:734px)"
+          />
+          <source
+            srcset="/src/assets/ipados_large.jpg 2x"
+            media="(min-width:0px)"
+          />
+          <img src="/src/assets/ipados_large.jpg" />
+        </picture>
+        <p class="subhead">
+          Switch between multiple overlapping apps and create your ideal
+          workspace with Stage&nbsp;Manager. Connect to an external display and
+          drag and drop files between devices. Explore full maps and rich
+          details in the new Weather app for iPad.
+        </p>
+        <a href="/uk/ios/ios-16-preview/" class="dark-button">See the preview</a>
+      </div>
+    </section>
+    <section class="section-watchos-9">
+      <div class="section-content section-padding-top-half">
+        <h2 class="headline">watchOS&nbsp;9</h2>
+        <picture class="overview-watchos-9">
+          <source
+            srcset="/src/assets/watchos_small.jpg 2x"
+            media="(max-width:734px)"
+          />
+          <source
+            srcset="/src/assets/watchos_large.jpg 2x"
+            media="(min-width:0px)"
+          />
+          <img src="/src/assets/watchos_large.jpg" />
+        </picture>
+        <p class="subhead">
+          The Workout app is packed with more features than ever. Track your
+          meds in the new Medications app. Get more insights into your sleep.
+          And enjoy more watch faces with more personalisation.
+        </p>
+        <a href="/uk/ios/ios-16-preview/" class="dark-button">See the preview</a>
+      </div>
+    </section>
+    <section class="section-macbook-pro-13">
+
     </section>
   </main>
 </template>
 
 <style scoped>
+/* MacBook Pro 13 */
+.section-macbook-pro-13 {
+    background-color: #000;
+}
+
+
 
 /*  */
 .section-padding {
   padding: 167px 0 180px;
+}
+.section-padding-top-half {
+  padding: 83px 0 180px;
 }
 .section-padding-bottom-half {
   padding: 167px 0 83px;
@@ -142,6 +195,26 @@
   font-weight: 400;
   letter-spacing: 0.009em;
   z-index: 1;
+}
+.dark-button {
+  color: #1d1d1f;
+  background-color: initial;
+  border: 2px solid #1d1d1f;
+  border-radius: 980px;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  font-size: 17px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  min-width: 26px;
+  padding: 12px 22px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+.dark-button:hover {
+  background-color: #1d1d1f;
+  color: #fff;
 }
 
 /* Hero-section */
@@ -252,25 +325,6 @@ picture img {
   align-items: center;
   margin-top: 0.8em;
 }
-.section-macbook-air .button-container .button {
-  color: #1d1d1f;
-  background-color: initial;
-  border: 2px solid #1d1d1f;
-  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
-  font-size: 17px;
-  line-height: 1.1764805882;
-  font-weight: 400;
-  letter-spacing: -0.022em;
-  min-width: 26px;
-  padding: 12px 22px;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-}
-.section-macbook-air .button-container .button:hover {
-  color: #fff;
-  background-color: #1d1d1f;
-}
 
 /* IOS 16 section */
 .section-ios-16 {
@@ -291,25 +345,6 @@ picture img {
   margin-top: -63px;
   max-width: 560px;
 }
-.section-ios-16 .section-content .button {
-  color: #1d1d1f;
-  background-color: initial;
-  border: 2px solid #1d1d1f;
-  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
-  font-size: 17px;
-  line-height: 1.1764805882;
-  font-weight: 400;
-  letter-spacing: -0.022em;
-  min-width: 26px;
-  padding: 12px 22px;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-}
-.section-ios-16 .section-content .button:hover {
-  color: #fff;
-  background-color: #1d1d1f;
-}
 
 /* Macos Ventura */
 .section-macos-ventura {
@@ -322,31 +357,50 @@ picture img {
 .overview-macos-ventura {
   display: block;
   width: 1205px;
-  height: 421px;
+  height: 561px;
 }
 .section-macos-ventura .subhead {
   margin-top: 71px;
   max-width: 630px;
 }
-.section-macos-ventura .section-content .button {
-  color: #1d1d1f;
-  background-color: initial;
-  border: 2px solid #1d1d1f;
-  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
-  font-size: 17px;
-  line-height: 1.1764805882;
-  font-weight: 400;
-  letter-spacing: -0.022em;
-  min-width: 26px;
-  padding: 12px 22px;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
+
+/* iPad os 16 */
+.section-ipados-16 {
+  background: #f5f5f7;
 }
-.section-macos-ventura .button:hover {
-  background-color: #1d1d1f;
-  color: #fff;
+.section-ipados-16 .headline {
+  z-index: 1;
+  margin-bottom: 50px;
 }
+.overview-ipados {
+  display: block;
+  width: 2443px;
+  height: 840px;
+  margin-top: -117px;
+}
+.section-ipados-16 .subhead {
+  margin-top: -34px;
+  max-width: 565px;
+}
+/* Section WatchOS */
+.section-watchos-9 {
+  background: #f5f5f7;
+}
+.section-watchos-9 .headline {
+  z-index: 1;
+}
+
+.section-watchos-9 .overview-watchos-9 {
+  margin-top: -24px;
+  display: block;
+  width: 1325px;
+  height: 595px;
+}
+.section-watchos-9 .subhead {
+  margin-top: -12px;
+  max-width: 560px;
+}
+
 
 @media only screen and (max-width: 734px) {
   .overview-hero {
@@ -387,11 +441,29 @@ picture img {
     width: 469px;
     height: 219px;
   }
-}
-/* @media only screen and (max-width: 1068px) {
-  .overview-macbook {
-    width: 688px;
-    height: 688px;
+  .overview-ipados {
+    width: 734px;
+    height: 495px;
+    margin-top: 15px;
   }
-} */
+  .section-ipados-16 .subhead {
+    margin-top: -14px;
+    max-width: 345px;
+  }
+  .section-watchos-9 .overview-watchos-9 {
+    margin-top: 28px;
+    width: 734px;
+    height: 400px;
+  }
+  .section-watchos-9 .subhead {
+  margin-top: -28px;
+  max-width: 328px;
+}
+}
+@media only screen and (max-width: 1068px) {
+  /* .section-ipados-16 .subhead {
+    margin-top: -14px;
+    max-width: 580px;
+  } */
+}
 </style>
