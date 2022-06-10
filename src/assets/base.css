@@ -1,6 +1,12 @@
 :root {
   --global-nav-collective-height: var(--r-globalnav-height);
   --r-globalnav-height: 44px;
+  --footer-background: #1d1d1f;
+  --footer-border-color: #424245;
+  --footer-text-color: #86868b;
+  --footer-link-color: #d2d2d7;
+  --footer-directory-title-color: #f5f5f7;
+  --footer-directory-title-color-hover: #fff;
 }
 
 *,
